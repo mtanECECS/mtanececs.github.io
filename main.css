@@ -29,7 +29,16 @@ body {
     color:black;
 }
 
-
+.zoom{
+    overflow: hidden;
+    
+}
+.zoom img{
+    transition: all 1.5s ease;
+}
+.zoom:hover img{
+    transform: scale(1.2);
+}
 
 
 .card-text-color{
