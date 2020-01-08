@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+/*
+
+.navbar{
+    position:fixed;
+    top:0;
+    width: 100%;
+}
+*/
+
+.nav-al ul {
+   list-style: none;
+   text-align: center;
+}
+
+.nav-al ul li {
+   display: inline-block;
+}
+.content-left{
+    border-right: 1px solid;
+    border-right-color: black;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color:black;
+}
+
+
+
+
+.card-text-color{
+    color: black;
+}
+
+.flex-even{
+    flex 1;
+}
+
+#home{
+    background-color: white;
+}
+
+#projects{
+    background-color: lightgray;
+}
+
+
+
+#work{
+    background-color: white;
+}
+
+#contact{
+    background-color: lightgray;
+}
