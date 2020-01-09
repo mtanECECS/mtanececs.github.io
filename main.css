@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 html{
     scroll-behavior: smooth;
+    height: 100%;
 }
 /*
 
@@ -24,9 +25,16 @@ html{
     border-right-color: black;
 }
 
+.content-right{
+    padding-left: 30px;
+    border-left: 1px solid;
+    border-left-color: black;
+}
+
 body {
     font-family: 'Ubuntu', sans-serif;
     color:black;
+    height: 100%;
 }
 
 .zoom{
@@ -54,7 +62,7 @@ body {
 }
 
 #projects{
-    background-color: lightgray;
+    background-color: white;
 }
 
 
@@ -63,6 +71,18 @@ body {
     background-color: white;
 }
 
-#contact{
-    background-color: lightgray;
+
+
+/*
+
+body {
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
 }
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+*/
