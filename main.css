@@ -12,6 +12,10 @@ html{
 }
 */
 
+.row{
+    margin: auto;
+}
+
 .nav-al ul {
    list-style: none;
    text-align: center;
