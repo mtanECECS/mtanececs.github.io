@@ -16,6 +16,7 @@
       
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="icon" href="images/profile.png">
     <title>Matthew Tan</title>
   </head>
   <body>
@@ -131,16 +132,18 @@
               <div class="" style="padding-bottom: 20px;">
                   <!--div class="content-left" style="padding-bottom: 20px"-->
                 <h4 >Summary</h4>
-                <p style="text-align: left" > I'm an application and script developer who's passionate in PCB design, and Game Development. Currently, I'm working on my Keyboard Project and my OceanView 360 project. Some of my hobbies include hardware design, building PCs, gaming, and scuba diving. </p>
+                <p style="text-align: left" > I'm an application and script developer who's passionate in PCB design and Game Development. Currently, I'm working on my Keyboard Project and my OceanView 360 project. Some of my hobbies include hardware design, building PCs, gaming, and scuba diving. </p>
                   <br>
                   <h4>Skills</h4>
                   <p style="text-align: left" >       
                       
                       <b>Project Management and Teamwork</b> - collaborating with team members to meet short- and  long-term deadlines in a systematic manner
                         <br>               
-                      <b>Quick Learner</b> - grasping and applying programming concepts as briefly as posible
+                      <b>Adaptability</b> - grasping and applying newly-learned programming concepts 
                         <br>
-                      <b>Responsible</b> - completing projects with the company's interests in mind
+                      <b>Problem Solving</b> - ability to craft innovative solutions to maximize productivity
+                      <br>
+                      <b>Communication</b> - capable of conveying complex engineering concepts effectively
                   </p>
                   <br>
                   <h4>Education</h4>
@@ -334,7 +337,7 @@
         
     
       </section>  
-    <section class="album" id="projects" style="padding-top: 30px; padding-bottom: 30px">
+    <section class="album" id="projects" style="padding-top: 50px; padding-bottom: 30px">
         <h2 style="text-align: center">Projects</h2>
         <div class="col-md-2 mx-auto"><hr style="border-top: 2px solid #999"></div>
  
@@ -347,18 +350,23 @@
                     <img class="card-img-top" style="height: 250px; width: 100%; display: block;" src="./images/pcbproject2.PNG" data-holder-rendered="true">
                    </div>
                    <div class="card-body card-text-color">
-                        <p class="card-text"><b>Keyboard PCB Project</b><br>A mechanical keyboard PCB designed using KiCad</p>
+                        <p class="card-text"><b>Keyboard PCB Project</b><br>
+                            
+                            <span class="badge badge-dark">C++</span>
+                            <span class="badge badge-dark">KiCad</span>
+                            <br>
+                            A mechanical keyboard PCB designed using KiCad</p>
                        
                         <!-- Button trigger modal -->
                         <button type="button" class="keyboard-pcb btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" onclick="getName(this)">
                           Learn More
                         </button>
                        
-                       <!-- change data-target-->
+                       <!-- 
                        <button type="button" class="keyboard-pcb btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
                           3D Viewer
                         </button>
-                       
+                        -->
                    </div>
                 </div>
                </div>
@@ -368,7 +376,12 @@
                    <img class="card-img-top" style="height: 250px; width: 100%; display: block;" src="https://cdn.pixabay.com/photo/2016/03/31/19/02/blacktip-1294753_960_720.jpg" data-holder-rendered="true">
                    </div>
                    <div class="card-body">
-                       <p class="card-text"><b>OceanView 360</b><br>360 livestream of the ocean using a video recorder and fiber optics</p>
+                       <p class="card-text"><b>OceanView 360</b><br>
+                           
+                           <span class="badge badge-dark">VHDL</span>
+                            <span class="badge badge-dark">KiCad</span>
+                            <br>
+                           360 livestream of the ocean using a video recorder and fiber optics</p>
                        
                        <!-- Button trigger modal -->
                         <button type="button" class="oceanview btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" onclick="getName(this)">
@@ -383,7 +396,12 @@
                    <img class="card-img-top" style="height: 250px; width: 100%; display: block;" src="./images/minesweeper_gal4.png" data-holder-rendered="true">
                    </div>
                    <div class="card-body ">
-                        <p class="card-text"><b>Minesweeper</b><br>Minesweeper game created using Java Applet</p>
+                        <p class="card-text"><b>Java Minesweeper</b><br>
+                            
+                             <span class="badge badge-dark">Java</span>
+                            <span class="badge badge-dark">BFS</span>
+                            <br>
+                            Minesweeper game created using Java Applet using search algorithms</p>
                        
                        <!-- Button trigger modal -->
                         <button type="button" class="minesweeper btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" onclick="getName(this)">
@@ -478,9 +496,9 @@
                    var modalName = modalNames[0];
                    var modalIdList = ["keyboard-pcb", "oceanview", "minesweeper" ];
                    var modalTitles = ["Keyboard PCB Project", "OceanView 360", "Minesweeper"];
-                   var aboutTexts = ["A fully-functional, custom 67-key keyboard made using KiCad, Adobe Illustrator, and QMK Firmware", //keyboard-pcb
+                   var aboutTexts = ["A fully-functional, custom 67-key keyboard made using KiCad, Adobe Illustrator, and QMK Firmware (C++)", //keyboard-pcb
                                     "A livestream video feed of the ocean using fiber optics to deliver high quality video <br><br><p style=\"font-size: 11px\"> Images from Pixabay</p>",             //oceanview
-                                    "A simple minesweeper game programmed using Java Applet"];                                           //minesweeper
+                                    "A simple minesweeper game programmed using Java Applet utilizing queues and linked lists to do breadth-first search"];                                           //minesweeper
                    var progressTexts = ["<ol><li><s>PCB Design</s></li><li><s>PCB Fabrication</s></li><li>Soldering SMD, TH parts</li><li>Case Design</li><li>Assembly</li><li>Programming</li></ol>", //keyboard-pcb
                                        "<ol><li>Research</li><li>PCB and Case Design</li><li>Wiring</li><li>Layout and Testing</li></ol>",                                               //oceanview
                                        "<ol><li><s>Programming</s></li><li><s>Testing</s></li><li><s>Final Revisions</s></li><li>Further Mods (Optional)</li></ol>"];
