@@ -386,18 +386,18 @@
                <div class="col-md-4">
                <div class = "card mb-4 box-shadow card-text-color">
                    <div class="zoom">
-                   <img class="card-img-top" style="height: 250px; width: 100%; display: block;" src="https://cdn.pixabay.com/photo/2016/03/31/19/02/blacktip-1294753_960_720.jpg" data-holder-rendered="true">
+                   <img class="card-img-top" style="height: 250px; width: 100%; display: block;" src="images/discord.png" data-holder-rendered="true">
                    </div>
                    <div class="card-body">
-                       <p class="card-text"><b>OceanView 360</b><br>
+                       <p class="card-text"><b>Discord Plays Emulator</b><br>
                            
-                           <span class="badge badge-dark">VHDL</span>
-                            <span class="badge badge-dark">KiCad</span>
+                           <span class="badge badge-dark">Python</span>
+                            <span class="badge badge-dark">Discord</span>
                             <br>
-                           360 livestream of the ocean using a video recorder and fiber optics</p>
+                           A Python bot that runs and hosts an emulator to play games</p>
                        
                        <!-- Button trigger modal -->
-                        <button type="button" class="oceanview btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" onclick="getName(this)">
+                        <button type="button" class="discord btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" onclick="getName(this)">
                           Learn More
                         </button>
                    </div>
@@ -440,7 +440,7 @@
                       <div class="modal-body">
                           
                         <!-- image carousel here -->
-                          <div class="container">
+                          <div class="container" >
                             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                               <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -507,15 +507,15 @@
                function getName(btnTitle){
                    var modalNames = btnTitle.classList
                    var modalName = modalNames[0];
-                   var modalIdList = ["keyboard-pcb", "oceanview", "minesweeper" ];
-                   var modalTitles = ["Keyboard PCB Project", "OceanView 360", "Minesweeper"];
+                   var modalIdList = ["keyboard-pcb", "discord", "minesweeper" ];
+                   var modalTitles = ["Keyboard PCB Project", "Discord Plays Emulator", "Minesweeper"];
                    var aboutTexts = ["A fully-functional, custom 67-key keyboard made using KiCad, Adobe Illustrator, and QMK Firmware (C++)", //keyboard-pcb
-                                    "A livestream video feed of the ocean using fiber optics to deliver high quality video <br><br><p style=\"font-size: 11px\"> Images from Pixabay</p>",             //oceanview
+                                    "A Python Discord bot made with Discord.py that hosts and streams a game on an emulator, while players type on chat to control the game",             //discord
                                     "A simple minesweeper game programmed using Java Applet utilizing queues and linked lists to do breadth-first search"];                                           //minesweeper
                    var progressTexts = ["<ol><li><s>PCB Design</s></li><li><s>PCB Fabrication</s></li><li>Soldering SMD, TH parts</li><li>Case Design</li><li>Assembly</li><li>Programming</li></ol>", //keyboard-pcb
-                                       "<ol><li>Research</li><li>PCB and Case Design</li><li>Wiring</li><li>Layout and Testing</li></ol>",                                               //oceanview
+                                       "<ol><li><s>Research</s></li><li>Programming</li><li>Testing</li><li>Deployment</li></ol>",                                               //oceanview
                                        "<ol><li><s>Programming</s></li><li><s>Testing</s></li><li><s>Final Revisions</s></li><li>Further Mods (Optional)</li></ol>"];
-                   var progressBars = [60, 10, 100];
+                   var progressBars = [60, 60, 100];
                    
                    var pBar = document.getElementById("project-progress");
                    var modalNum = modalIdList.indexOf(modalName);
@@ -545,11 +545,13 @@
                    
                    
                    for (var i = 1; i <= 4; i++){
-                   
+
                         document.getElementById("img-" + i).src = "./images/" + modalName + "_gal" + i + ".png" ;
-                        
-                   
+
                    }
+                   
+                    
+                   
                    
                }
                    
@@ -558,7 +560,31 @@
       
             
             </div> 
+            
+        
             <div class="row">
+                <div class="col-md-4">
+               <div class = "card mb-4 box-shadow">
+                   <!--div class="zoom">   
+                    <img class="card-img-top" style="height: 250px; width: 100%; display: block;" src="./images/pcbproject2.PNG" data-holder-rendered="true">
+                   </div-->
+                   <div class="card-body card-text-color">
+                        <p class="card-text"><b>OceanView 360</b><br>
+                            
+                            <span class="badge badge-dark">VHDL</span>
+                            <!--span class="badge badge-dark">Java</span-->
+                            <span class="badge badge-dark">KiCad</span>
+                            <br>
+                            360 livestream of the ocean using a video recorder and fiber optics</p>
+                       
+                       <!-- 
+                       <button type="button" class="keyboard-pcb btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                          3D Viewer
+                        </button>
+                        -->
+                   </div>
+                </div>
+               </div>
                <div class="col-md-4">
                <div class = "card mb-4 box-shadow">
                    <!--div class="zoom">   
