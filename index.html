@@ -15,39 +15,53 @@
     
       
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="images/profile.png">
     <title>Matthew Tan</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md bg-dark sticky-top">
-      
-      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="main-navigation">
+    <nav class="navbar">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#work">Work Experience</a>
-          </li>
-          <!--li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li-->
-
+            <li class="logo">
+                <a href="#home" class="nav-link">
+                   
+                    <span class="link-text"><img src="images/cover.png" class="nav-logo"></span>
+                </a>
+            
+            </li>
+            <li class="nav-item">
+                <a href="#home" class="nav-link">
+                    <div><img src="images/user.png"  class="nav-img"></div>
+                                        
+                    <span class="link-text">About Me</span>
+                </a>
+            </li>
+        
+            <li class="nav-item">
+                <a href="#projects" class="nav-link">
+                    <div><img src="images/browser.png"  class="nav-img"></div>
+                                        
+                    <span class="link-text">Projects</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#work" class="nav-link">
+                    <div><img src="images/work.png"  class="nav-img"></div>
+                                        
+                    <span class="link-text">Work Experience</span>
+                </a>
+            </li>
+        
+        
+        
         </ul>
-      </div>
+      
     </nav>  
     
-      
+    <main>
     <section class="text-center" id="home" style="padding-bottom: 40px; padding-top: 60px">
        
-        <h1>Hi, I'm Matthew</h1>
+        <h1 class="">Hi, I'm Matthew</h1>
         <br>
         <br>
         <div class="row">
@@ -103,7 +117,7 @@
                         </a>
                         </div>
                      <div class="column">
-                        <a href="files/Matthew_Tan_Resume_01_2020.pdf" download="MatthewTan_Resume"> 
+                        <a href="files/Matthew_Tan_Resume_09_2020.pdf" download="MatthewTan_Resume"> 
                             <img style="height: 64px; width: 64; display: block" src="./images/resume.png">
                         </a>
                          </div>
@@ -543,7 +557,7 @@
                    //make sure images are in png file format
                    
                    
-                   
+                    
                    for (var i = 1; i <= 4; i++){
 
                         document.getElementById("img-" + i).src = "./images/" + modalName + "_gal" + i + ".png" ;
@@ -664,6 +678,39 @@
         <div class="col-md-2 mx-auto"><hr style="border-top: 2px solid #999"></div>
         <br>
         <div class="d-flex flex-column bd-highlight mb-3">
+            
+            
+                <div class="p-2 bd-highlight">
+                   
+                   <div class="container">
+                      <div class="row">
+                        <div class="col" style="text-align: left">
+                          <div class="" >
+                            <h4>Focused Improvement Consulting</h4>         
+                            <span>July 2020 - Sept 2020
+                                <br>Oakville, Canada
+                            </span>
+                            </div>
+                        </div>
+                        <div class="col-9" style="text-align: left">
+                            <div class="content-right">
+                            <span>
+                                <h5>Junior eLearning Developer</h5>
+                                <ul>
+                                    <li>Scripted and used WordPress pages (PHP) and plugins for an interactive eLearning website.</li>
+                                    <li>Developed online lectures and edited lecture videos for a mixed-learning online course. </li>
+                                
+                                </ul>
+                            </span>  
+                            </div>
+
+                        </div>
+                      </div>
+                    </div>
+                   
+                    
+                    
+                </div>
                 
                <div class="p-2 bd-highlight">
                    
@@ -755,11 +802,12 @@
         </div>
         
       </section> 
-      
+      </main>
       <footer class="">
         <div class="container">
             <p style="text-align: center; color: black; font-size: 11px">
-                Oceanview images from <a href="pixabay.com" style="color: black">Pixabay</a>                                                                 
+                                                                      
+            Icons made by <a href="https://www.flaticon.com/authors/chanut" title="Chanut">Chanut</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
                 <br>
                 ©Matthew Tan 2020
             </p>
