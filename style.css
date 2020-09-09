@@ -84,11 +84,23 @@ body::-webkit-scrollbar-thumb{
 .nav-link:hover{
     filter: grayscale(0%) opacity(1);
     color: white;
+    
 }
 
 .link-text{
     display: none;
     margin-left: 1rem;
+    animation: fadein ease 500ms;
+}
+
+@keyframes fadein{
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
 }
 
 
