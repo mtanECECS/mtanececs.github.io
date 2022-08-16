@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+:root{
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    --text-primary: black;
+    --text-secondary: white;
+    --bg-primary: white;
+}
+
+main{
+    margin-left: 5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: black;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #a4276f;
+}
+
+
+
+.navbar{
+   
+    position:fixed;
+    background-color: black;
+    transition: width 200ms ease-out;
+    
+    z-index: 100;
+}
+
+
+
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+.nav-logo{
+    min-width: 5rem;
+    width: 10rem;
+    height: 4rem;
+    display: hidden;
+    
+}
+
+
+
+
+.nav-img{
+    min-width: 2rem;
+    width: 3rem;
+    margin 0 1rem;
+    height: 3rem;
+    overflow: hidden;   
+    z-index: 100;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: gray;
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.6);
+    transition: 500ms;
+}
+
+.nav-link:hover{
+    filter: grayscale(0%) opacity(1);
+    color: white;
+    
+}
+
+.link-text{
+    display: none;
+    margin-left: 1rem;
+    animation: fadein ease 500ms;
+}
+
+@keyframes fadein{
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.row{
+    margin: auto;
+}
+
+.nav-al ul {
+   list-style: none;
+   text-align: center;
+}
+
+.nav-al ul li {
+   display: inline-block;
+}
+.content-left{
+    border-right: 1px solid;
+    border-right-color: black;
+}
+
+.content-right{
+    padding-left: 10px;
+    border-left: 1px solid;
+    border-left-color: black;
+}
+
+/*
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color:black;
+    height: 100%;
+}
+*/
+
+.zoom{
+    overflow: hidden;
+    
+}
+.zoom img{
+    transition: all 1.5s ease;
+}
+.zoom:hover img{
+    transform: scale(1.2);
+}
+
+
+.card-text-color{
+    color: black;
+}
+
+.flex-even{
+    flex 1;
+}
+
+#home{
+    background-color: white;
+}
+
+#projects{
+    background-color: white;
+}
+
+
+
+#work{
+    background-color: white;
+}
+
+@media only screen and (max-width:600px){
+    main{
+        margin: 0;
+    }
+    .navbar{
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+   
+        
+    }
+    .nav-logo{
+        display: none;
+    }
+    
+    .navbar-nav{
+        flex-direction: row;
+        align-items:center;
+    }
+    .nav-link{
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width:600px){
+    .navbar{
+        top: 0;
+        width:5rem;
+        height:100vh;
+        align-items: flex-start;
+    }
+    
+    .navbar:hover{
+        width: 14rem;
+    }
+
+    .navbar:hover .link-text{
+        display: block;
+    }
+
+    .navbar:hover .nav-logo{
+        display: block;
+    }
+}
